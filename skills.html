@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навыки - Ломейко Никита</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tailwind.config.js"></script>
+</head>
+
+<body class="font-sans bg-gradient-to-br from-slate-50 to-blue-50 text-slate-900 min-h-screen">
+    <header class="fixed top-0 left-0 right-0 z-50 py-4 bg-white/90 backdrop-blur-md border-b border-slate-200/60">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-code text-white text-sm"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Никита Ломейко</h1>
+                        <p class="text-xs text-slate-600">Frontend Developer</p>
+                    </div>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html"
+                    class="text-slate-700 hover:text-blue-600 transition-all duration-300 font-medium hover:font-semibold">Главная</a>
+                <a href="skills.html" class="text-blue-600 font-semibold transition-all duration-300">Навыки</a>
+                <a href="projects.html"
+                    class="text-slate-700 hover:text-blue-600 transition-all duration-300 font-medium hover:font-semibold">Проекты</a>
+                <a href="contact.html"
+                    class="text-slate-700 hover:text-blue-600 transition-all duration-300 font-medium hover:font-semibold">Контакты</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="tel:+79081886595"
+                    class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 py-2.5 rounded-xl transition-all duration-300 flex items-center text-sm font-medium shadow-lg hover:shadow-xl">
+                    <i class="fas fa-phone mr-2"></i> Позвонить
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <section class="animate-fade-in">
+                <div class="flex items-center mb-8">
+                    <div class="section-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 ml-4">Мои Навыки</h2>
+                </div>
+
+                <div class="node-card rounded-2xl p-8">
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fab fa-react text-cyan-500 mr-3 text-2xl"></i> React & Frameworks
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-cyan-100 text-cyan-800 border-cyan-200 px-4 py-2.5 rounded-xl font-medium">React</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">react-router-dom
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">redux
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">redux-tool-kit
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">rtk
+                                query ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">effector
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">mobx
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">zustand
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">react-query
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">axios
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">react-hook-form
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">emotion
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">styled-components
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">reactuse
+                                ○</span>
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">ReactFlow
+                                ○</span>
+                            <span
+                                class="skill-tag bg-black text-white border-black px-4 py-2.5 rounded-xl font-medium">NextJS</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-language text-blue-500 mr-3 text-2xl"></i> Языки программирования
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">JavaScript
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">TypeScript
+                                ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-palette text-purple-500 mr-3 text-2xl"></i> Стили & UI Библиотеки
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Sass
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">SCSS
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">Less
+                                ○</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">MUI
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">PrimeReact
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Tailwind
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">ChakraUI
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Bootstrap
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-pink-100 text-pink-800 border-pink-200 px-4 py-2.5 rounded-xl font-medium">CSS</span>
+                            <span
+                                class="skill-tag bg-blue-100 text-blue-800 border-blue-200 px-4 py-2.5 rounded-xl font-medium">HTML</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-shield-alt text-green-500 mr-3 text-2xl"></i> Авторизация & Безопасность
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">JWT
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">OAuth
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Авторизация
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Аутентификация
+                                ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-code text-orange-500 mr-3 text-2xl"></i> Верстка & Разметка
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Верстка
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Адаптивная
+                                верстка ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Кросс-браузерная
+                                верстка ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Семантическая
+                                верстка ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Pixel
+                                Perfect ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Mobile
+                                First ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-sitemap text-indigo-500 mr-3 text-2xl"></i> Архитектура & Паттерны
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">FSD
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Модульная
+                                архитектура ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Atomic
+                                Design ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">MVC
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">MVVM
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Clean
+                                Architecture ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-tachometer-alt text-red-500 mr-3 text-2xl"></i> Оптимизация &
+                            Производительность
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Lazy
+                                Loading ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Мемоизация
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Пагинация
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Оптимизация
+                                картинок ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Code
+                                Splitting ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Bundle
+                                Analysis ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Performance
+                                Monitoring ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-chart-bar text-teal-500 mr-3 text-2xl"></i> Графика & Визуализация
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Canvas
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Графики
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Диаграммы
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Chart.js
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">D3.js
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">SVG
+                                ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-sliders-h text-pink-500 mr-3 text-2xl"></i> UI Компоненты & Интерактив
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Слайдеры
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Свайперы
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Карусели
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Swiper.js
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Формы
+                                с валидацией ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Сложные
+                                формы ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Динамические
+                                формы ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-magic text-yellow-500 mr-3 text-2xl"></i> Анимации & Интерactions
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">CSS
+                                Анимации ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">JavaScript
+                                Анимации ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Плавные
+                                переходы ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Framer
+                                Motion ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Микро-анимации
+                                ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-tools text-orange-500 mr-3 text-2xl"></i> Сборщики & Инструменты
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Vite
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">CRA
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">Webpack
+                                ○</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-laptop-code text-indigo-500 mr-3 text-2xl"></i> Окружение разработки
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">Git
+                                ○</span>
+                            <span
+                                class="skill-tag bg-yellow-100 text-yellow-800 border-yellow-200 px-4 py-2.5 rounded-xl font-medium">Docker
+                                ○</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">VSCode
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">ESLint
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Prettier
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-gray-100 text-gray-800 border-gray-200 px-4 py-2.5 rounded-xl font-medium">GitHub</span>
+                            <span
+                                class="skill-tag bg-orange-100 text-orange-800 border-orange-200 px-4 py-2.5 rounded-xl font-medium">GitLab</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-6 text-slate-800 flex items-center">
+                            <i class="fas fa-users text-blue-500 mr-3 text-2xl"></i> Soft Skills
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Скорость
+                                работы ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Коммуникация
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Ответственность
+                                ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Командная
+                                работа ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Решение
+                                проблем ✓</span>
+                            <span
+                                class="skill-tag bg-green-100 text-green-800 border-green-200 px-4 py-2.5 rounded-xl font-medium">Тайм-менеджмент
+                                ✓</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <h4 class="text-lg font-bold mb-4 text-slate-800">Обозначения уровня владения:</h4>
+                        <div class="flex flex-wrap items-center gap-6 text-sm text-slate-600">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-100 border border-green-200 rounded mr-2"></span>
+                                <span>✓ - Идеально</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-yellow-100 border border-yellow-200 rounded mr-2"></span>
+                                <span>○ - Средне</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-blue-100 border border-blue-200 rounded mr-2"></span>
+                                <span>Без отметки - Хорошо</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold gradient-text">Никита Ломейко</h2>
+                    <p class="mt-2 text-slate-400">Frontend-разработчик</p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="tel:+79081886595" class="text-slate-400 hover:text-white transition-all duration-300">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/79081886595"
+                        class="text-slate-400 hover:text-white transition-all duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/79081886595"
+                        class="text-slate-400 hover:text-white transition-all duration-300">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:nikitalomieiko@gmail.com"
+                        class="text-slate-400 hover:text-white transition-all duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-500">
+                <p>© 2025 Ломейко Никита Вадимович. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

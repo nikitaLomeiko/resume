@@ -1,0 +1,229 @@
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.node-card {
+    background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.node-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+.node-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+}
+
+.skill-tag {
+    transition: all 0.2s ease;
+    border: 1px solid;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -3px rgba(59, 130, 246, 0.3);
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    animation: pulse-slow 2s ease-in-out infinite;
+}
+
+.code-font {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.section-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Loading screen styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    transition: opacity 0.8s ease;
+}
+
+.terminal {
+    width: 90%;
+    max-width: 700px;
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+    background: #334155;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-button.close {
+    background: #ef4444;
+}
+
+.terminal-button.minimize {
+    background: #f59e0b;
+}
+
+.terminal-button.maximize {
+    background: #10b981;
+}
+
+.terminal-title {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.terminal-body {
+    padding: 24px;
+    color: #e2e8f0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.terminal-prompt {
+    color: #10b981;
+    margin-right: 8px;
+}
+
+.terminal-command {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #10b981;
+    animation: typing 4s steps(20, end);
+}
+
+.terminal-command.no-cursor {
+    border-right: none;
+    animation: typing 4s steps(20, end);
+}
+
+.terminal-output {
+    margin-top: 16px;
+    color: #94a3b8;
+}
+
+.output-line {
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.output-line.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.loading-bar {
+    width: 100%;
+    height: 4px;
+    background: #334155;
+    border-radius: 2px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.loading-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    width: 0%;
+    animation: terminalLoading 3s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #10b981;
+    }
+}
+
+@keyframes terminalLoading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
